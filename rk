@@ -1,0 +1,10 @@
+import smtplib
+email='ramyakeerthimr@gmail.com'
+password='Ramyakeerthimr96@1'
+send_to_email='ramyakeerthimr.ldc18@rvce.edu.in'
+message='This is my message'
+server=smtplib.SMTP('smtp.gmail.com',587)
+server.starttls()
+server.login(email,password)
+server.sendmail(email,send_to_email,message)
+server.quit()
